@@ -19,14 +19,14 @@ This repository contains a static developer portfolio built with plain HTML, CSS
 
 ## Architecture (high level)
 
-```mermaid
+
 graph LR
   GH[GitHub (push to main)] --> GA[GitHub Actions CI/CD]
   GA --> Build[Build / Lint (optional)]
   Build --> Deploy[Deploy via SSH/SCP]
   Deploy --> EC2[AWS EC2 (NGINX)]
   EC2 --> Users[Users (web browsers)]
-```
+
 
 ## How to run locally
 
